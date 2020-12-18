@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn() {}
+        console.log(typeof fn)
+        var a;
+        console.log(typeof a);
+        console.log(a === undefined) 
+        var b = null;
+        console.log(b === null); 
+        console.log([1, 2, 3] instanceof Array);
+        console.log({}instanceof Object);
+        console.log([1] instanceof Object); 
+        console.log(new Date() instanceof Object); 
+
+        //Object.prototype.toString
+        console.log(Object.prototype.toString.call([])); 
+        console.log(Object.prototype.toString.call({})); 
+        console.log(Object.prototype.toString.call("123"));
+        console.log(Object.prototype.toString.call(1)); 
+        console.log(Object.prototype.toString.call(true)); 
+        console.log(Object.prototype.toString.call(null)); 
+        console.log(Object.prototype.toString.call(undefined)); 
+        console.log(Object.prototype.toString.call(new Date()));
+        console.log(Object.prototype.toString.call(fn)); 
+        console.log(Object.prototype.toString.call(new RegExp())); 
+        console.log(Object.prototype.toString.call([]).slice(8, -1).toLowerCase()); 
+        function checkType(value) {
+            return Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
+        }
+        console.log(checkType([]))
+        console.log(checkType({}))
+        console.log(checkType(""))
+        console.log(checkType(1))
+        console.log(checkType(true))
+
+
+
+        // 判断数据类型.html:11 function
+        // 判断数据类型.html:13 undefined
+        // 判断数据类型.html:14 true
+        // 判断数据类型.html:16 true
+        // 判断数据类型.html:17 true
+        // 判断数据类型.html:18 true
+        // 判断数据类型.html:19 true
+        // 判断数据类型.html:20 true
+        // 判断数据类型.html:23 [object Array]
+        // 判断数据类型.html:24 [object Object]
+        // 判断数据类型.html:25 [object String]
+        // 判断数据类型.html:26 [object Number]
+        // 判断数据类型.html:27 [object Boolean]
+        // 判断数据类型.html:28 [object Null]
+        // 判断数据类型.html:29 [object Undefined]
+        // 判断数据类型.html:30 [object Date]
+        // 判断数据类型.html:31 [object Function]
+        // 判断数据类型.html:32 [object RegExp]
+        // 判断数据类型.html:33 array
+        // 判断数据类型.html:37 array
+        // 判断数据类型.html:38 object
+        // 判断数据类型.html:39 string
+        // 判断数据类型.html:40 number
+        // 判断数据类型.html:41 boolean
+    </script>
+</body>
+</html>

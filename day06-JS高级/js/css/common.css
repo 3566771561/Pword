@@ -1,0 +1,35 @@
+/* 默认空间大小，保留了margin原有的大小和具有游览器差异，未初始化html,body页面*/
+
+body{
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+h3{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#box{
+    width:100px;
+    height: 100px;
+    background-color: pink;
+}
+#pox{
+    width:100px;
+    height: 100px;
+    background-color: pink;
+}
+#mouse{
+    width:100px;
+    height: 100px;
+    background-color: pink;
+}
+#mouse1{
+    width:100px;
+    height: 100px;
+    background-color: pink;
+}
+
+
